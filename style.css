@@ -1,0 +1,163 @@
+:root {
+    --bg-color: hsl(30, 18%, 87%);
+    --title-color: hsl(24, 5%, 18%);
+    --accent-color: hsl(332, 51%, 32%);
+    --accent-color-2: hsl(14, 45%, 36%);
+    --border-color: hsl(30, 54%, 90%);
+}
+
+@font-face {
+    font-family: "Young Serif";
+    font-weight: 400;
+    src: url(./assets/fonts/young-serif/YoungSerif-Regular.ttf)
+}
+
+@font-face {
+    font-family: "Outfit";
+    src: url(assets/fonts/outfit/Outfit-VariableFont_wght.ttf)
+}
+
+body {
+    background-color: var(--bg-color);
+    font-family: "Outfit";
+}
+
+.recipe {
+    background-color: white;
+    width: 480px;
+    border-radius: 20px;
+    padding: 20px;
+    font-size: 16px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.recipe li
+{
+    font-size: 12px;
+    line-height: 1.5;
+    padding-left: 10px;
+    padding-bottom: 5px;
+    color: hsl(30, 10%, 34%);
+}
+
+.recipe-card img {
+    width: 100%;
+    height: 180px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.recipe-card h1 {
+    font-family: "Young Serif", serif;
+    font-size: 22px;
+    color: var(--title-color);
+
+}
+
+.recipe-card p {
+    font-size: 12px;
+}
+
+.recipe-prep {
+    background-color: hsl(330, 100%, 98%);
+    border-radius: 10px;
+    font-size: 12px;
+    padding-top: 1px;
+    padding-bottom: 10px;
+}
+
+.recipe-prep h3 {
+    padding-top: 10px;
+    padding-left: 15px;
+    color: var(--accent-color);
+    font-size: 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.recipe-prep ul {
+    color: var(--title-color);
+    list-style: inside;
+    padding-left: 15px;
+    margin: 5px;
+}
+
+.recipe-prep li::marker {
+    color: var(--accent-color);
+}
+
+.recipe-prep span {
+    padding-left: 8px;
+}
+
+.receipe-headers {
+    color: var(--accent-color-2);
+    font-family: "Young Serif", serif;
+    font-size: 18px;
+    font-weight: 100;
+}
+
+.recipe-ingredients li::marker{
+    color: var(--accent-color-2);
+}
+
+.recipe-ingredients li {
+    list-style-type: square;
+}
+
+.recipe-instructions li::marker {
+    color: var(--accent-color-2);
+    font-weight: bold;
+}
+
+.recipe-instructions ol {
+    padding-left: 20px;
+}
+
+.recipe-nutrition p{
+    font-family: "Outfit";
+    font-size: 12px;
+}
+.recipe-nutrition {
+    height: 30%;
+}
+.recipe-nutrition table{
+    font-family: "Outfit";
+    font-size: 12px;
+    font-weight: normal;
+    width: 100%;
+    height: 30%;
+    border-collapse: collapse;
+
+}
+.values{
+    font-weight: bold;
+    color: var(--accent-color-2)
+}
+
+.recipe-nutrition th{
+    font-weight: normal;
+    text-align: left;
+    padding-left: 25px;
+}
+.recipe-nutrition tr{
+    border-bottom: 1px solid;
+    border-bottom-color: var(--border-color);
+}
+.recipe-nutrition tr:last-child{
+    border-bottom: none;
+}
+
+.recipe-nutrition th, .recipe-nutrition td{
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+@media screen and (max-width: 375px){
+    .recipe
+    {
+        width: 100%;
+        padding: 0px !important;
+    }
+}
